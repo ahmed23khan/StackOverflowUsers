@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 470638772F758C2000FA2B0E;
 			remoteInfo = StackOverflowUsers;
 		};
-		470638992F758C2300FA2B0E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 470638702F758C2000FA2B0E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 470638772F758C2000FA2B0E;
-			remoteInfo = StackOverflowUsers;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		470638782F758C2000FA2B0E /* StackOverflowUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4706388E2F758C2300FA2B0E /* StackOverflowUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		470638982F758C2300FA2B0E /* StackOverflowUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -53,11 +45,6 @@
 			path = StackOverflowUsersTests;
 			sourceTree = "<group>";
 		};
-		4706389B2F758C2300FA2B0E /* StackOverflowUsersUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StackOverflowUsersUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		470638952F758C2300FA2B0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +70,6 @@
 			children = (
 				4706387A2F758C2000FA2B0E /* StackOverflowUsers */,
 				470638912F758C2300FA2B0E /* StackOverflowUsersTests */,
-				4706389B2F758C2300FA2B0E /* StackOverflowUsersUITests */,
 				470638792F758C2000FA2B0E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +79,6 @@
 			children = (
 				470638782F758C2000FA2B0E /* StackOverflowUsers.app */,
 				4706388E2F758C2300FA2B0E /* StackOverflowUsersTests.xctest */,
-				470638982F758C2300FA2B0E /* StackOverflowUsersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,29 +131,6 @@
 			productReference = 4706388E2F758C2300FA2B0E /* StackOverflowUsersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		470638972F758C2300FA2B0E /* StackOverflowUsersUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 470638A92F758C2300FA2B0E /* Build configuration list for PBXNativeTarget "StackOverflowUsersUITests" */;
-			buildPhases = (
-				470638942F758C2300FA2B0E /* Sources */,
-				470638952F758C2300FA2B0E /* Frameworks */,
-				470638962F758C2300FA2B0E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4706389A2F758C2300FA2B0E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4706389B2F758C2300FA2B0E /* StackOverflowUsersUITests */,
-			);
-			name = StackOverflowUsersUITests;
-			packageProductDependencies = (
-			);
-			productName = StackOverflowUsersUITests;
-			productReference = 470638982F758C2300FA2B0E /* StackOverflowUsersUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,10 +145,6 @@
 						CreatedOnToolsVersion = 26.0.1;
 					};
 					4706388D2F758C2300FA2B0E = {
-						CreatedOnToolsVersion = 26.0.1;
-						TestTargetID = 470638772F758C2000FA2B0E;
-					};
-					470638972F758C2300FA2B0E = {
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = 470638772F758C2000FA2B0E;
 					};
@@ -215,7 +166,6 @@
 			targets = (
 				470638772F758C2000FA2B0E /* StackOverflowUsers */,
 				4706388D2F758C2300FA2B0E /* StackOverflowUsersTests */,
-				470638972F758C2300FA2B0E /* StackOverflowUsersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4706388C2F758C2300FA2B0E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		470638962F758C2300FA2B0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +202,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		470638942F758C2300FA2B0E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,11 +209,6 @@
 			isa = PBXTargetDependency;
 			target = 470638772F758C2000FA2B0E /* StackOverflowUsers */;
 			targetProxy = 4706388F2F758C2300FA2B0E /* PBXContainerItemProxy */;
-		};
-		4706389A2F758C2300FA2B0E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 470638772F758C2000FA2B0E /* StackOverflowUsers */;
-			targetProxy = 470638992F758C2300FA2B0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,46 +442,6 @@
 			};
 			name = Release;
 		};
-		470638AA2F758C2300FA2B0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7NAZG4PL36;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tauqeerkhan.StackOverflowUsersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StackOverflowUsers;
-			};
-			name = Debug;
-		};
-		470638AB2F758C2300FA2B0E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7NAZG4PL36;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tauqeerkhan.StackOverflowUsersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StackOverflowUsers;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,15 +468,6 @@
 			buildConfigurations = (
 				470638A72F758C2300FA2B0E /* Debug */,
 				470638A82F758C2300FA2B0E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		470638A92F758C2300FA2B0E /* Build configuration list for PBXNativeTarget "StackOverflowUsersUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				470638AA2F758C2300FA2B0E /* Debug */,
-				470638AB2F758C2300FA2B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
