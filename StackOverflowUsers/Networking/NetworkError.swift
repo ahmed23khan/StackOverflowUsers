@@ -7,28 +7,27 @@
 
 import Foundation
 
-enum Endpoint {
-    case topUsers(page: Int, pageSize: Int)
+enum NetworkError: Error, Equatable {
+    case invalidURL
+    case decodingFailed
+    case serverError(statusCode: Int)
+    case unreachable
+    case unknown
+}
 
-    var url: URL? {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "api.stackexchange.com"
-        components.path = "/2.2/users"
-        components.queryItems = queryItems
-        return components.url
-    }
-
-    private var queryItems: [URLQueryItem] {
+extension NetworkError: LocalizedError {
+    var errorDescription: String? {
         switch self {
-        case .topUsers(let page, let pageSize):
-            return [
-                URLQueryItem(name: "page", value: "\(page)"),
-                URLQueryItem(name: "pagesize", value: "\(pageSize)"),
-                URLQueryItem(name: "order", value: "desc"),
-                URLQueryItem(name: "sort", value: "reputation"),
-                URLQueryItem(name: "site", value: "stackoverflow")
-            ]
+        case .unreachable:
+            return "You appear to be offline. Check your connection and try again."
+        case .serverError(let code):
+            return "Something went wrong on the server (Error \(code)). Please try again."
+        case .decodingFailed:
+            return "We received unexpected data. Please try again later."
+        case .invalidURL:
+            return "Couldn't build the request URL."
+        case .unknown:
+            return "Something went wrong. Please try again."
         }
     }
 }
