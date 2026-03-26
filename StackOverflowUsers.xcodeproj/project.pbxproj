@@ -26,16 +26,30 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				Networking/NetworkService.swift,
+				Networking/URLSessionNetworkService.swift,
 			);
 			target = 470638772F758C2000FA2B0E /* StackOverflowUsers */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		478494FC2F75BB0A00F30329 /* Exceptions for "StackOverflowUsers" folder in "Copy Bundle Resources" phase from "StackOverflowUsers" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 470638762F758C2000FA2B0E /* Resources */;
+			membershipExceptions = (
+				Networking/NetworkService.swift,
+				Networking/URLSessionNetworkService.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4706387A2F758C2000FA2B0E /* StackOverflowUsers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				478494F92F75BAAC00F30329 /* Exceptions for "StackOverflowUsers" folder in "StackOverflowUsers" target */,
+				478494FC2F75BB0A00F30329 /* Exceptions for "StackOverflowUsers" folder in "Copy Bundle Resources" phase from "StackOverflowUsers" target */,
 			);
 			path = StackOverflowUsers;
 			sourceTree = "<group>";
