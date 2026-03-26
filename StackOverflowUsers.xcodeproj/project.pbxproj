@@ -22,7 +22,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		470638A02F758C2300FA2B0E /* Exceptions for "StackOverflowUsers" folder in "StackOverflowUsers" target */ = {
+		478494F92F75BAAC00F30329 /* Exceptions for "StackOverflowUsers" folder in "StackOverflowUsers" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -35,7 +35,7 @@
 		4706387A2F758C2000FA2B0E /* StackOverflowUsers */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				470638A02F758C2300FA2B0E /* Exceptions for "StackOverflowUsers" folder in "StackOverflowUsers" target */,
+				478494F92F75BAAC00F30329 /* Exceptions for "StackOverflowUsers" folder in "StackOverflowUsers" target */,
 			);
 			path = StackOverflowUsers;
 			sourceTree = "<group>";
