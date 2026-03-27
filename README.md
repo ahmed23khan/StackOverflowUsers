@@ -17,6 +17,10 @@ The ViewModel handles loading data, preparing it for display, and managing scree
 
 I added a repository layer between the ViewModel and the network code to keep the ViewModel easier to test.
 
+## Architecture diagram
+
+![Architecture](architecture.png)
+
 ## Concurrency
 
 The app uses `URLSession` with async/await. The ViewModel is marked `@MainActor` so UI state updates stay on the main thread.
