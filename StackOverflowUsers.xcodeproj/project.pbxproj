@@ -26,7 +26,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
-				Networking/URLSessionNetworkService.swift,
 			);
 			target = 470638772F758C2000FA2B0E /* StackOverflowUsers */;
 		};
